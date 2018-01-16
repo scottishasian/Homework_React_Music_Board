@@ -4,6 +4,12 @@ body {
   font-family: sans-serif;
 }
 
+html {
+  background-image: url('https://media.giphy.com/media/hoHdXh5FCOaGY/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .music-box {
   border-style: solid;
   margin-left: auto;
@@ -15,13 +21,14 @@ body {
 
 .music-box h1 {
   background-color: teal;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
 .music-list {
   overflow-y: scroll;
   height: 400px;
+  background-color: grey;
 }
 
 .song {
