@@ -9,17 +9,25 @@ class MusicList extends React.Component {
 
     const musicNodes = this.props.music.map(function(tune) {
       return(
-        <Song songName={tune['im:name'].label}>
-          {/* <div id="song-artist">
-            {song.artist}
-          </div> */}
+        <Song key={tune['id'].attributes['im:id']}
+          songName={tune['im:name'].label}
+          link={tune['id'].label}>
+
+          <div id="song-artist">
+            {tune['im:artist'].label}
+            <img src={tune['im:image'].label}/>
+          </div>
+
+          <div id="price">
+            {tune['im:price'].label}
+          </div>
         </Song>
       )
 
     })
 
     return (
-      <div className="movie-list">
+      <div className="music-list">
         {musicNodes}
       </div>
     )

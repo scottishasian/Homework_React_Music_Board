@@ -30,7 +30,7 @@ class MusicBox extends React.Component {
     return(
       <div className="music-box">
         <h1>Music Box</h1>
-        <MusicList music={this.state.music}/>
+        <MusicList music={this.state.music} />
       </div>
     )
 

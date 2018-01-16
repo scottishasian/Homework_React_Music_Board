@@ -6,9 +6,34 @@ body {
 
 .music-box {
   border-style: solid;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
   display: block;
+  margin-top: 50px;
+}
+
+.music-box h1 {
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+}
+
+.music-list {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.song {
+  padding: 5px;
+  border-style: dotted;
+}
+
+#price {
+  display: inline-block;
+  float: right;
+}
+
+#song-artist {
+  display: inline-block;
 }
