@@ -44,3 +44,10 @@ html {
 #song-artist {
   display: inline-block;
 }
+
+.image {
+  float: right;
+  display: inline-block;
+  max-width: 110%;
+  max-height: 110%;
+}

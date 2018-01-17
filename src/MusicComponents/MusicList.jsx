@@ -15,11 +15,14 @@ class MusicList extends React.Component {
 
           <div id="song-artist">
             {tune['im:artist'].label}
-            <img src={tune['im:image'].label}/>
           </div>
 
           <div id="price">
             {tune['im:price'].label}
+          </div>
+
+          <div id="image">
+            <img src={tune['im:image'][0].label}/>
           </div>
         </Song>
       )
